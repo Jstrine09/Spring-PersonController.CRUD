@@ -17,7 +17,7 @@ public class PersonService {
     }
 
     public Person getPersonById(Long id) {
-        return repository.findById(id).orElse(notFound());
+        return repository.findById(id).orElse(null);
     }
 
     public Person createPerson(Person person) {
